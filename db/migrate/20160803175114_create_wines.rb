@@ -26,7 +26,7 @@ class CreateWines < ActiveRecord::Migration[5.0]
       t.string  :comment
 
       t.timestamps
-      
+
     end
   end
 end

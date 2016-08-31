@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160803175114) do
+ActiveRecord::Schema.define(version: 20160830100000) do
 
   create_table "wines", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "title"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20160803175114) do
     t.string   "comment"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+    t.string   "importer"
+    t.integer  "price"
   end
 
 end

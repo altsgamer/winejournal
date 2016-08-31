@@ -7,6 +7,7 @@
       ul
         - wine.errors.full_messages.each do |message|
           li= message
+
   .field
     = f.label :title
     = f.text_field :title
@@ -34,5 +35,49 @@
   .field
     = f.label :sugar
     = f.text_field :sugar
+  .field
+    = f.label :importer
+    = f.text_field :importer
+  .field
+    = f.label :price
+    = f.text_field :price
+
+  .field
+    = f.label :color_intensity
+    = f.text_field :color_intensity
+  .field
+    = f.label :color_description
+    = f.text_field :color_description
+  .field
+    = f.label :nose_intensity
+    = f.text_field :nose_intensity
+  .field
+    = f.label :nose_description
+    = f.text_field :nose_description
+  .field
+    = f.label :acidity
+    = f.text_field :acidity
+  .field
+    = f.label :body
+    = f.text_field :body
+  .field
+    = f.label :lenght
+    = f.text_field :lenght
+  .field
+    = f.label :tanins
+    = f.text_field :tanins
+  .field
+    = f.label :bubbles
+    = f.text_field :bubbles
+  .field
+    = f.label :taste_description
+    = f.text_field :taste_description
+  .field
+    = f.label :rating
+    = f.text_field :rating
+  .field
+    = f.label :comment
+    = f.text_field :comment
+
   .actions
     = f.submit
